@@ -1,0 +1,85 @@
+{
+  "$schema": "cifp_schema.json",
+  "cifp": {
+    "alumne": [
+      {
+        "id": 1,
+        "nom": "Joan",
+        "llinatges": "Garcia Martínez",
+        "data_naixement": "15/03/2005",
+        "correu": "joangarcia@alumne.cifp.com",
+        "telefon": "612345678",
+        "adreca": "Carrer Major 2, Palma",
+        "data_matricula": "13/09/2023",
+        "curs": "DAM"
+      },
+      {
+        "id": 2,
+        "nom": "Maria",
+        "llinatges": "Soler Hidalgo",
+        "data_naixement": "22/07/2004",
+        "correu": "mariasoler@alumne.cifp.com",
+        "data_matricula": "15/09/2024",
+        "curs": "DAW"
+      },
+      {
+        "id": 3,
+        "nom": "Pere",
+        "llinatges": "Vidal López",
+        "data_matricula": "18/09/2023",
+        "curs": "ASIX"
+      }
+    ],
+    "professor": [
+      {
+        "id": 101,
+        "nom": "Laura",
+        "llinatges": "Fernández Roig",
+        "data_naixement": "10/05/1980",
+        "correu": "laurafernández@cifp.com",
+        "telefon": "671288567",
+        "adreca": "Avinguda de Jaume I 10, Inca",
+        "data_incorporacio": "21/08/2014",
+        "departament": "Informàtica",
+        "assignatura": [
+          {
+            "id_assignatura": 1,
+            "nom_assignatura": "Programació",
+            "cicle": "DAM",
+            "data_inici": "13/09/2024",
+            "data_final": "23/06/2025"
+          },
+          {
+            "id_assignatura": 2,
+            "nom_assignatura": "Desenvolupament Web",
+            "cicle": "DAW",
+            "data_inici": "13/09/2025"
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "nom": "Miquel",
+        "llinatges": "Grimalt Pons",
+        "correu": "miquelgrimalt@cifp.com",
+        "data_incorporacio": "03/09/2015",
+        "departament": "Electricitat",
+        "assignatura": [
+          {
+            "id_assignatura": 3,
+            "nom_assignatura": "Automatismes",
+            "cicle": "SEIA"
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "nom": "Anna",
+        "llinatges": "Bauzà Mas",
+        "data_naixement": "20/11/1985",
+        "data_incorporacio": "30/07/2018",
+        "departament": "Automoció"
+      }
+    ]
+  }
+}

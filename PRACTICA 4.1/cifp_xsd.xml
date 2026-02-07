@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cifp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="cifp.xsd">
+    
+    <alumne id="1">
+        <nom>Joan</nom>
+        <llinatges>Garcia Martínez</llinatges>
+        <data_naixement>15/03/2005</data_naixement>
+        <correu>joangarcia@alumne.cifp.com</correu>
+        <telefon>612345678</telefon>
+        <adreca>Carrer Major 2, Palma</adreca>
+        <data_matricula>13/09/2025</data_matricula>
+        <curs>DAM</curs>
+    </alumne>
+    
+    <alumne id="2">
+        <nom>Maria</nom>
+        <llinatges>Soler Hidalgo</llinatges>
+        <data_naixement>22/07/2004</data_naixement>
+        <correu>mariasoler@alumne.cifp.com</correu>
+        <data_matricula>15/09/2024</data_matricula>
+        <curs>DAW</curs>
+    </alumne>
+    
+    <alumne id="3">
+        <nom>Pere</nom>
+        <llinatges>Vidal López</llinatges>
+        <data_matricula>18/09/2023</data_matricula>
+        <curs>ASIX</curs>
+    </alumne>
+    
+    <professor id="101">
+        <nom>Laura</nom>
+        <llinatges>Camps Roig</llinatges>
+        <data_naixement>10/05/1980</data_naixement>
+        <correu>lauracamps@cifp.com</correu>
+        <telefon>671288567</telefon>
+        <adreca>Avinguda de Jaume I 10, Inca</adreca>
+        <data_incorporacio>01/09/2010</data_incorporacio>
+        <departament>Informàtica</departament>
+        <assignatura id_assignatura="1">
+            <nom_assignatura cicle="DAM">Programació</nom_assignatura>
+            <data_inici>13/09/2024</data_inici>
+            <data_final>23/06/2025</data_final>
+        </assignatura>
+        <assignatura id_assignatura="2">
+            <nom_assignatura cicle="DAW">Desenvolupament Web</nom_assignatura>
+            <data_inici>13/09/2025</data_inici>
+        </assignatura>
+    </professor>
+    
+    <professor id="102">
+        <nom>Miquel</nom>
+        <llinatges>Grimalt Pons</llinatges>
+        <correu>miquelgrimalt@cifp.com</correu>
+        <data_incorporacio>03/09/2015</data_incorporacio>
+        <departament>Electricitat</departament>
+        <assignatura id_assignatura="3">
+            <nom_assignatura cicle="SEIA">Automatismes</nom_assignatura>
+        </assignatura>
+    </professor>
+    
+    <professor id="103">
+        <nom>Ana</nom>
+        <llinatges>Bauzà Mas</llinatges>
+        <data_naixement>20/11/1985</data_naixement>
+        <data_incorporacio>30/07/2018</data_incorporacio>
+        <departament>Automoció</departament>
+    </professor>
+    
+</cifp>
