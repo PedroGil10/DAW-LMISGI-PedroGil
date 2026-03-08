@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Oficines</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #0066cc;
+    }
+    .office {
+      background-color: white;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .office-header {
+      background-color: #003366;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .office-content {
+      display: flex;
+    }
+    .office-image {
+      width: 250px;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      margin: 20px;
+      border: 2px solid #ddd;
+    }
+    .office-details {
+      flex: 1;
+      padding: 20px;
+    }
+    .office-details table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .office-details td {
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+    .office-details td:first-child {
+      font-weight: bold;
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Oficines</h1>
+  <div id="offices-container"></div>
+
+  <script>
+    function processOffices(offices) {
+      var container = document.getElementById('offices-container');
+      
+      for (var i = 0; i < offices.length; i++) {
+        var office = offices[i];
+        
+        var officeDiv = document.createElement('div');
+        officeDiv.className = 'office';
+        
+        var header = document.createElement('div');
+        header.className = 'office-header';
+        header.textContent = office.city;
+        officeDiv.appendChild(header);
+        
+        var content = document.createElement('div');
+        content.className = 'office-content';
+        
+        var imageDiv = document.createElement('div');
+        imageDiv.className = 'office-image';
+        imageDiv.style.backgroundImage = 'url(' + office.picture + ')';
+        content.appendChild(imageDiv);
+        
+        var detailsDiv = document.createElement('div');
+        detailsDiv.className = 'office-details';
+        
+        var table = document.createElement('table');
+        
+        var phoneRow = document.createElement('tr');
+        var phoneLabel = document.createElement('td');
+        phoneLabel.textContent = 'Telèfon:';
+        var phoneValue = document.createElement('td');
+        phoneValue.textContent = office.phone;
+        phoneRow.appendChild(phoneLabel);
+        phoneRow.appendChild(phoneValue);
+        table.appendChild(phoneRow);
+        
+        var addressRow = document.createElement('tr');
+        var addressLabel = document.createElement('td');
+        addressLabel.textContent = 'Direcció:';
+        var addressValue = document.createElement('td');
+        var addressText = office.addressLine1;
+        if (office.addressLine2) {
+          addressText += ', ' + office.addressLine2;
+        }
+        addressValue.textContent = addressText;
+        addressRow.appendChild(addressLabel);
+        addressRow.appendChild(addressValue);
+        table.appendChild(addressRow);
+        
+        if (office.state) {
+          var stateRow = document.createElement('tr');
+          var stateLabel = document.createElement('td');
+          stateLabel.textContent = 'Estat:';
+          var stateValue = document.createElement('td');
+          stateValue.textContent = office.state;
+          stateRow.appendChild(stateLabel);
+          stateRow.appendChild(stateValue);
+          table.appendChild(stateRow);
+        }
+        
+        var countryRow = document.createElement('tr');
+        var countryLabel = document.createElement('td');
+        countryLabel.textContent = 'País:';
+        var countryValue = document.createElement('td');
+        countryValue.textContent = office.country + ' - ' + office.territory;
+        countryRow.appendChild(countryLabel);
+        countryRow.appendChild(countryValue);
+        table.appendChild(countryRow);
+        
+        detailsDiv.appendChild(table);
+        content.appendChild(detailsDiv);
+        officeDiv.appendChild(content);
+        container.appendChild(officeDiv);
+      }
+    }
+  </script>
+  
+  <script src="offices.jsonp"></script>
+</body>
+</html>
