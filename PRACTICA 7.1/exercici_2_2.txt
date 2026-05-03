@@ -1,0 +1,13 @@
+Petició REST - Exercici 2.2
+Municipis que comencen per la lletra E
+
+URL:
+http://ideib.caib.es/adreces/rest/municipis?inici=E
+
+Descripció:
+Aquesta petició retorna tots els municipis de les Illes Balears el nom 
+dels quals comença per la lletra E.
+El paràmetre "inici=E" filtra els municipis per la lletra inicial.
+
+Resultat:
+L'API retorna municipis com: Eivissa, Escorca, Esporles, etc.

@@ -1,0 +1,13 @@
+Petició REST - Exercici 2.1
+Municipis de Menorca
+
+URL:
+http://ideib.caib.es/adreces/rest/municipis?illa=Menorca
+
+Descripció:
+Aquesta petició retorna tots els municipis de l'illa de Menorca.
+El paràmetre "illa=Menorca" filtra els resultats per l'illa especificada.
+
+Resultat:
+L'API retorna 8 municipis de Menorca: Alaior, Ciutadella de Menorca, 
+es Castell, es Mercadal, es Migjorn Gran, Ferreries, Maó i Sant Lluís.
