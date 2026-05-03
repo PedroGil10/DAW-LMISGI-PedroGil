@@ -12,14 +12,9 @@ URL per obtenir coordenades en WGS-84:
 http://ideib.caib.es/adreces/rest/municipis/07022?srid=4326
 
 Paràmetre srid=4326:
-El paràmetre srid (Spatial Reference System Identifier) amb valor 4326 
-sol·licita les coordenades en el sistema WGS-84, que és el mateix que 
-utilitza Google Maps (longitud-latitud).
-
-NOTA:
-En el moment de realitzar la pràctica, l'API retorna un error 404.
-Com a alternativa, s'han consultat les coordenades oficials de l'Ajuntament 
-de Felanitx.
+El paràmetre srid amb valor 4326 sol·licita les coordenades en el sistema WGS-84.
+L'API retorna un error 404.
+Com a alternativa, he consultat les coordenades oficials de l'Ajuntament de Felanitx.
 
 Coordenades de l'Ajuntament de Felanitx (WGS-84):
 - Posició X (Longitud): 3.1479
